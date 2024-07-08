@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gowun+Batang&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+  <div id="themeswitch">🌙</div>
+  <div id="maincont">
+  <div id="announc">
+    <span>Začíná:</span>
+    <span id="startname"></span>
+    <div id="acell">X</div>  
+  </div>
+  
+    <div id="cont">
+      <div id="gridcont">  
+      </div>
+    </div>
+    
+    
+    <div id="contnames">
+    <div class="name">
+    Hráč 1<br>
+    <input id="fname">
+    <br>  
+    <div class="startcell" id="fcell">X</div>
+    </div>
+    
+    <div class="name">
+    Hráč 2<br>
+    <input id="sname">
+    <br>  
+    <div class="startcell" id="scell">O</div>    
+    </div>
+    </div>
+    
+  </div>
+  
+  <div id="announcer">
+  Vyhrál: <br><br><span id="anName"></span><br>
+  <div class="startcell" id="anncell">X</div><br><br>
+  <button onclick="Game.again()">Hrát znovu</button>
+  </div>
+  
+  <div id="draw">
+  Remíza!<br><br><br>
+  <button onclick="Game.again()">Hrát znovu</button>  
+  </div>
+
+<script src="script.js">
+</script>
+
+  </body>
+</html>

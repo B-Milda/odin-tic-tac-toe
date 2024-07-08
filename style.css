@@ -1,0 +1,186 @@
+:root {
+  --color1: white;
+  --color2: black;
+  --color3: rgba(255, 255, 255, 0.7);
+  --color4: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  background-color: var(--color1);
+}
+
+body > div:first-of-type {
+  position: absolute;
+  cursor: pointer;
+}
+
+#maincont {
+  display: grid;
+  align-items: start;
+  grid-template-rows: 1fr 3fr 1fr;
+  height: 95vh;
+  gap: 1em;
+}
+
+#announc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  color: var(--color2);
+}
+
+#acell {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  color: var(--color1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+#fcell {
+  background-color: blue;
+}
+
+#scell {
+  background-color: red;
+}
+
+#cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gridcont {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#gridcont > div {
+  border: 1px solid var(--color2);
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  color: var(--color1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#contnames {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--color2);
+}
+
+input {
+  border: none;
+  padding: 5px;
+  padding-top: 30px;
+  border-bottom: 1px solid var(--color2);
+  font-size: 25px;
+  font-family: "Lora", serif;
+  text-align: center;
+  background-color: var(--color1);
+  color: var(--color2);
+}
+
+input:focus {
+  outline: none;
+}
+
+input:active {
+  outline: none;
+}
+
+.startcell {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  color: var(--color1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#announcer {
+  display: none;
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  backdrop-filter: blur(6px);
+  background-color: var(--color3);
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2em;
+  font-size: 28px;
+  color: var(--color2);
+}
+
+#draw {
+  display: none;
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  backdrop-filter: blur(6px);
+  background-color: var(--color3);
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2em;
+  font-size: 28px;
+  color: var(--color2);
+}
+
+button {
+  background-color: var(--color1);
+  font-family: "Lora", serif;
+  border: 1px solid var(--color2);
+  color: var(--color2);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
